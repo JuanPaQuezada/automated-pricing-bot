@@ -1,0 +1,15 @@
+2026/04/10-23:13:59.000 8ba8 Reusing MANIFEST C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/04/10-23:13:59.001 8ba8 Recovering log #55
+2026/04/10-23:13:59.002 8ba8 Reusing old log C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\EdgeCoupons/coupons_data.db/000055.log 
+2026/04/10-23:13:59.165 3478 Level-0 table #59: started
+2026/04/10-23:13:59.170 3478 Level-0 table #59: 682208 bytes OK
+2026/04/10-23:13:59.172 3478 Delete type=0 #55
+2026/04/10-23:13:59.172 3478 Compacting 4@0 + 1@1 files
+2026/04/10-23:13:59.178 3478 Generated table #60@0: 4 keys, 682281 bytes
+2026/04/10-23:13:59.178 3478 Compacted 4@0 + 1@1 files => 682281 bytes
+2026/04/10-23:13:59.178 3478 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/10-23:13:59.179 3478 Delete type=2 #48
+2026/04/10-23:13:59.179 3478 Delete type=2 #50
+2026/04/10-23:13:59.179 3478 Delete type=2 #53
+2026/04/10-23:13:59.179 3478 Delete type=2 #56
+2026/04/10-23:13:59.179 3478 Delete type=2 #59

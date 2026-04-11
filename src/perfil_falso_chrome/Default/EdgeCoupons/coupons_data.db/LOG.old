@@ -1,0 +1,6 @@
+2026/04/10-23:13:48.401 5c74 Reusing MANIFEST C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/04/10-23:13:48.403 5c74 Recovering log #52
+2026/04/10-23:13:48.403 5c74 Reusing old log C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\EdgeCoupons/coupons_data.db/000052.log 
+2026/04/10-23:13:48.471 87fc Level-0 table #56: started
+2026/04/10-23:13:48.486 87fc Level-0 table #56: 682208 bytes OK
+2026/04/10-23:13:48.487 87fc Delete type=0 #52
