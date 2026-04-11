@@ -39,7 +39,7 @@ class DataSearcher:
     def get_data(self, prices_selector_css, name_selector_css, show_website_data=False, show_value=False):
         with sync_playwright() as p:
             #set up a fake profile in Edge
-            user_data_dir = "./perfil_falso_chrome"
+            user_data_dir = "./perfil_falso_edge"
             browser=p.chromium.launch_persistent_context(
                 user_data_dir,
                 headless=False,
