@@ -51,6 +51,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+perfil_falso_chrome/
 
 # Translations
 *.mo

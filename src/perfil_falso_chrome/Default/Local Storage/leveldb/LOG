@@ -1,5 +1,5 @@
-2026/04/10-23:13:52.871 5d34 Reusing MANIFEST C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\Local Storage\leveldb/MANIFEST-000001
-2026/04/10-23:13:52.877 5d34 Recovering log #19
-2026/04/10-23:13:52.877 5d34 Level-0 table #21: started
-2026/04/10-23:13:52.885 5d34 Level-0 table #21: 82660 bytes OK
-2026/04/10-23:13:52.889 5d34 Delete type=0 #19
+2026/04/11-10:09:13.437 8208 Reusing MANIFEST C:\Users\Juan Pablo\Documents\CursoProgramacionCreativa\prices-project\src\perfil_falso_chrome\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/11-10:09:13.448 8208 Recovering log #51
+2026/04/11-10:09:13.449 8208 Level-0 table #54: started
+2026/04/11-10:09:13.457 8208 Level-0 table #54: 83034 bytes OK
+2026/04/11-10:09:13.464 8208 Delete type=0 #51

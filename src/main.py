@@ -21,6 +21,8 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
 # ------------------------- Functions -------------------------
 class DataSearcher:
@@ -70,7 +72,7 @@ class DataSearcher:
                 if show_value:
                     print(f"Tag not found: {prices_selector_css}. Error: {e}")
                 browser.close()
-                return ''
+                return 'No encontrado'
 
 
 # ------------------------- Variables -------------------------
@@ -81,7 +83,11 @@ todayTime = now.strftime("%H:%M")
 
 emailSubject = f"This is a test {todayDate} at {todayTime}"
 
+load_dotenv()
 
+botEmail = os.getenv("BOT_EMAIL")
+botPassword = os.getenv("BOT_PASSWORD")
+myEmail = os.getenv("MY_EMAIL")
 
 records_folder = 'records'
 ipad_FileName = 'ipad_PriceTracker.csv'
@@ -125,9 +131,9 @@ else:
 
 new_records = {
     "datetime" : [pd.Timestamp.now(), pd.Timestamp.now()],
-    "Provider" : ["Walmart", "Amazon"],
-    "Name" : [info_walmart[0], info_amazon[0]],
-    "price" : [info_walmart[1], info_amazon[1]]
+    "provider" : ["Walmart", "Amazon"],
+    "Name" : [info_walmart[1], info_amazon[1]],
+    "price" : [info_walmart[0], info_amazon[0]]
 }
 
 records_DataFrame = []
@@ -138,12 +144,17 @@ try:
     records_DataFrame = pd.concat([records_DataFrame, new_rows], ignore_index=True)
     records_DataFrame.to_csv(records_path, index=False)
     print("File's data successfully updated")
-except FileNotFoundError or IndexError:
+except (FileNotFoundError or IndexError):
     print(f"File not found. Creating CSV at {records_folder}")
     records_DataFrame = pd.DataFrame(new_records)
     records_DataFrame.to_csv(records_path, index=False)
     print("File successfully created")
-    
+
+records_DataFrame['price'] = records_DataFrame['price'].astype(str).str.replace('$','', regex=False)
+records_DataFrame['price'] = records_DataFrame['price'].str.replace(',','',regex=False)
+
+records_DataFrame['price'] = pd.to_numeric(records_DataFrame['price'], errors='coerce')
+
 allTime_lowestPrice = records_DataFrame.loc[records_DataFrame['price'].idxmin()]
 print(f"\nAll time lowest price: \n{allTime_lowestPrice}")
 
@@ -182,10 +193,10 @@ email_body = f'''
         </style>
     </head>
     <body>
-        <h1>AMAZON Curl Pro Plus</h1>
+        <h1>AMAZON and Walmart Ipad</h1>
         <h2>Today prices</h2>
-        <p>Price <a href="{URL_WALMART}" class="amazon" target="_blank">Amazon</a>: ${info_walmart[0]} MXN</p>
-        <p>Price <a href="{URL_AMAZON}" class="tymo" target="_blank">Tymo</a>: ${info_amazon[0]} MXN</p>
+        <p>Price <a href="{URL_WALMART}" class="amazon" target="_blank">Walmart</a>: ${info_walmart[0]} MXN</p>
+        <p>Price <a href="{URL_AMAZON}" class="amazon" target="_blank">Amazon</a>: ${info_amazon[0]} MXN</p>
         <h2>Record</h2>
         <p><b>All time Lowest Price:</b> ${allTime_lowestPrice['price']} ({allTime_lowestPrice['provider']} - {allTime_lowestPrice['datetime']})</p>
         <p><b>Today Lowest Price:</b> ${today_lowestPrice['price']} ({today_lowestPrice['provider']} - {today_lowestPrice['datetime']})</p>
@@ -207,6 +218,7 @@ email.attach(HTMLPart)
 print(email.as_string())
 
 connection = smtplib.SMTP("smtp.gmail.com",587)
+connection.starttls()
 connection.login(user=botEmail, password=botPassword)
 connection.sendmail(from_addr=botEmail, to_addrs=myEmail,msg=email.as_string())
 connection.close()

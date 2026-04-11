@@ -1,5 +1,17 @@
-datetime,Provider,Name,prices,price
-2026-04-10 23:11:04.428659,Walmart,2999.0,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,
-2026-04-10 23:11:04.428729,Amazon,2792.0,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",
-2026-04-10 23:14:01.227726,Walmart,2999.0,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado
-2026-04-10 23:14:01.227793,Amazon,2792.0,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)"
+datetime,Provider,Name,prices,price,provider
+2026-04-10 23:11:04.428659,Walmart,2999.0,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,
+2026-04-10 23:11:04.428729,Amazon,2792.0,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,
+2026-04-10 23:14:01.227726,Walmart,2999.0,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,
+2026-04-10 23:14:01.227793,Amazon,2792.0,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",
+2026-04-11 09:18:48.837197,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 09:18:48.841205,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
+2026-04-11 09:50:19.717906,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 09:50:19.718003,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
+2026-04-11 09:51:09.620111,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 09:51:09.620291,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
+2026-04-11 09:59:16.242301,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 09:59:16.242385,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
+2026-04-11 10:02:00.326991,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 10:02:00.327075,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
+2026-04-11 10:09:22.587530,,iPad 8th Apple 10.2 Pulgadas 32GB Plata Reacondicionado,,2999.0,Walmart
+2026-04-11 10:09:22.587627,,"Apple iPad (10.2 Pulgadas, Wi-Fi, 32 GB) - Gris Espacial (último Modelo, 8ª generación) (Reacondicionado)",,2792.0,Amazon
